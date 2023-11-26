@@ -1,0 +1,23 @@
+{
+    "name": "TruPortal",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "concurrently \"npm run start-shell\" \"npm run start-layout\" \"npm run start-um\" \"npm run start-pc\"",
+      "start-shell": "npm --workspace tecmec-shell start",
+      "start-layout": "npm --workspace tecmec-layout start",
+      "start-um": "npm --workspace tecmec-user-manager start",
+      "start-pc": "npm --workspace tecmec-product-catlog start"
+    },
+    "workspaces": [
+      "tecmec-shell",
+      "tecmec-layout",
+      "tecmec-user-manager",
+      "tecmec-product-catlog"
+    ],
+    "author": "Arun Venkatesan",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    }
+  }
+  
